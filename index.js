@@ -4,17 +4,18 @@
 var katzDeliLine = [];
 
 //This function adds people to the Deli Line
-function takeANumber(katzDeliLine,name) {
+function takeANumber(katzDeliLine) {
   
 /* I know that because I am looking to give a person their place in line or a position in an array NOT their index number */
 
 //Adds the name of the person to the Deli line
-katzDeliLine.push(`${name}`);
+var number = 1;
+katzDeliLine.push(number);
 
 //Find the place of that person in line and assigns it to a variable.
 var yourLineNumber = katzDeliLine.length;
 
-return `Welcome, ${name}. You are number ${yourLineNumber} in line.`;
+return `Welcome, you are number ${yourLineNumber}.`;
 }
 
 //Calls the Take A Number function
